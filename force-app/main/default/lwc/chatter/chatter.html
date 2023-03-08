@@ -1,0 +1,18 @@
+<template>
+    <lightning-layout multiple-rows="true">
+        <lightning-layout-item flexibility="auto">
+            <lightning-tabset variant="scoped">
+                <lightning-tab label="Post">
+                    <lightning-layout-item size="8">
+                        <lightning-input-rich-text value={myVal} onchange={handleChange} placeholder="Share an update..." disabled-categories="FORMAT_BODY"></lightning-input-rich-text>
+                    </lightning-layout-item>
+
+                    <div class="slds-text-align_right slds-m-top_small slds-m-bottom_medium">
+                        <lightning-button variant="brand" label="Share" title="Primary action" onclick={handleClick}
+                            class="slds-m-left_x-small"></lightning-button>
+                    </div>
+                </lightning-tab>
+            </lightning-tabset>
+        </lightning-layout-item>
+    </lightning-layout>
+</template>
